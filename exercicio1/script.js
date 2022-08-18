@@ -5,3 +5,15 @@ const array = [
     [20, 33, 11, 12, 19],
     [3, 3, 4, 5, 10]
 ]
+
+  for(let i in array){
+    //o i aqui é uma string
+    let gols = `Jogador ${Number(i)+1}: `
+    //lê os arrays completos e nomeia o número do sorteio
+    for(let j of array[i]){
+      //o j já vai trazer o valor 
+      gols += `${[j]} `;
+      //lê os números dentro do array que foi lido antes
+    }
+    console.log(gols);
+  }
